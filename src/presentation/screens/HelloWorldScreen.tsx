@@ -1,12 +1,23 @@
 import React from 'react'
-import { Text, View } from 'react-native'
+import { StyleSheet, Text, View } from 'react-native'
 
-const HelloWorldScreen = () => {
+export const HelloWorldScreen = () => {
   return (
-    <View>
-        <Text>HelloWorldScreen</Text>
+    <View style={styles.container}>
+        <Text>Hola paola</Text>
     </View>
   )
 }
 
-export default HelloWorldScreen
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+    },
+    title: {
+        fontSize: 45,
+        textAlign: 'center',
+        color: 'black',
+        padding: 20
+    } 
+    
+})
