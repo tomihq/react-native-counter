@@ -5,7 +5,7 @@ import { HelloWorldScreen } from './src/presentation/screens/HelloWorldScreen'
 const App = () => {
   return (
     <SafeAreaView style={{flex: 1}}>
-      <HelloWorldScreen/>
+      <HelloWorldScreen name='Tomás Agustín HQ'/>
     </SafeAreaView>
   )
 }
