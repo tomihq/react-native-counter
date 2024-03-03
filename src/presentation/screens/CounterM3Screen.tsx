@@ -10,12 +10,10 @@ export const CounterM3Screen = () => {
   return (
     <View style={globalStyles.centerContainer}>
       <Text style={globalStyles.title}>{counter}</Text>
-      <Icon name='accessibility-outline'  size={25}/>
       <FAB
-        label='+1'
         style={globalStyles.fab}
         onPress={() => setCounter((prev) => prev+1)}
-        onLongPress={() => setCounter(0)}
+        icon="add"
       />
     </View>
   );
